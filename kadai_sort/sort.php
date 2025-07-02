@@ -12,7 +12,7 @@
 
       $nums = [15, 4, 18, 23, 10 ];
 
-      function sort_2away($order,$array){
+      function sort_2way($array,$order){
         if($order === true){
           echo'昇順にソートします。<br>';
           sort ($array);
@@ -27,9 +27,9 @@
       }
     }
       
-    sort_2away(true, $nums);
+    sort_2way($nums,true);
     echo '<br>';
-    sort_2away(false,$nums);
+    sort_2way($nums,false);
 
     ?>
   </p>
